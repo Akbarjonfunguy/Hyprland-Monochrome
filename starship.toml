@@ -1,0 +1,56 @@
+# ── Style ─────────────────────────────────────────────
+add_newline = true
+format = """
+[╭─](#6f6f6f)$directory$git_branch$git_status$nodejs$rust$python
+[╰─](#6f6f6f) $character
+"""
+
+# ── Character ────────────────────────────────────────
+[character]
+success_symbol = "[❯](#9e9e9e)"
+error_symbol = "[❯](#ef6f6f)"
+vicmd_symbol = "[❮](#6fefff)"
+
+# ── Directory ────────────────────────────────────────
+[directory]
+style = "#6fefff"
+read_only = " "
+read_only_style = "bold #ef6f6f"
+truncation_length = 3
+truncate_to_repo = false
+
+# ── Git ───────────────────────────────────────────────
+[git_branch]
+symbol = " "
+style = "#8fef6f"
+
+[git_status]
+style = "#ef6f6f"
+
+# ── Node.js ───────────────────────────────────────────
+[nodejs]
+symbol = " "
+style = "#8fef6f"
+
+# ── Python ────────────────────────────────────────────
+[python]
+symbol = " "
+style = "#ef6f6f"
+format = '[${symbol}${version}](#ef6f6f) '
+
+# ── Rust (optional) ───────────────────────────────────
+[rust]
+symbol = " "
+style = "#ffaa44"
+
+# ── Time (Optional) ───────────────────────────────────
+[time]
+disabled = false
+format = "[$time]($style) "
+time_format = "%R"
+style = "#9e9e9e"
+
+# ── Line Breaks ───────────────────────────────────────
+[line_break]
+disabled = false
+
